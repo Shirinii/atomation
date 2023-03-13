@@ -56,8 +56,13 @@ public class baseReport {
 
 	@DataProvider(name = "URLS")
 	public Object[][] urlsList() throws Exception {
+		// Specify the path to the file
+		String filePath = System.getProperty("user.dir") + "/TestData.xlsx";
 
-		Object[][] testObjArray = ExcelUtils.getTableArray("/Users/shirin/NewFolder/maven/TestData.xlsx",
+		// Create a File object using the path
+		File file = new File(filePath);
+
+		Object[][] testObjArray = ExcelUtils.getTableArray(file,
 				"Sheet1");
 
 		return (testObjArray);

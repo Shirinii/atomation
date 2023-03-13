@@ -1,6 +1,7 @@
 package planbox.maven;
 
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -19,13 +20,13 @@ public class ExcelUtils {
 
 	private static XSSFRow Row;
 
-	public static Object[][] getTableArray(String FilePath, String SheetName) throws Exception {
+	public static Object[][] getTableArray(File file, String SheetName) throws Exception {
 
 		String[][] tabArray = null;
 
 		try {
 
-			FileInputStream ExcelFile = new FileInputStream(FilePath);
+			FileInputStream ExcelFile = new FileInputStream(file);
 
 			// Access the required test data sheet
 
