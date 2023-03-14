@@ -1,6 +1,7 @@
 package planbox.maven;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -129,15 +130,12 @@ public class AppTest extends baseReport {
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class,'container')]")),
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='row-fluid']"))));
 		analyzeLog();
-		try {
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='secretkey']"))).sendKeys(key);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("btn-secrectkey-login"))).click();
-		} catch (Exception Exceptionhappended) {
-			jse.executeScript("window.history.go(-1)");
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='secretkey']"))).sendKeys(key);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("btn-secrectkey-login"))).click();
-			System.out.println("catch");
-		}
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='secretkey']"))).sendKeys(key);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("btn-secrectkey-login"))).click();
+
+		// jse.executeScript("window.history.go(-1)");
+
 		wait.until(ExpectedConditions.or(
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='is-boxes']")),
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class, 'header-navbar')]"))));

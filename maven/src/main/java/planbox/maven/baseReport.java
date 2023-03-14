@@ -183,15 +183,12 @@ public class baseReport {
 			logger.log(Status.FAIL,
 					MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
 			String screenshotPath = getScreenShot(driver, result.getName());
-			Assert.fail("Test Case Failed Snapshot is attached " + logger.addScreenCaptureFromPath(screenshotPath));
+			logger.addScreenCaptureFromPath(screenshotPath);
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			logger.log(Status.SKIP,
 					MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE));
 
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			logger.log(Status.SKIP,
-					MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE));
-		}
+		} 
 	}
 
 }

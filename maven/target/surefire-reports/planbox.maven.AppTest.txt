@@ -1,29 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: planbox.maven.AppTest
 -------------------------------------------------------------------------------
-Tests run: 38, Failures: 2, Errors: 0, Skipped: 36, Time elapsed: 31.509 s <<< FAILURE! - in planbox.maven.AppTest
-main(planbox.maven.AppTest)  Time elapsed: 27.208 s  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=111.0.5563.64)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 111.559 s <<< FAILURE! - in planbox.maven.AppTest
+main(planbox.maven.AppTest)  Time elapsed: 44.664 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='secretkey'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4c91987bd22003989a647d6b6ef5e482, executeScript {script=return document.getElementsByClassName('main-content-inner')[0].innerText;, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/9v/ttfw4v0x0ng...}, goog:chromeOptions: {debuggerAddress: localhost:57848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57848/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c91987bd22003989a647d6b6ef5e482
-	at planbox.maven.AppTest.main(AppTest.java:241)
-
-getResult(planbox.maven.AppTest)  Time elapsed: 27.216 s  <<< FAILURE!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=111.0.5563.64)
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4c91987bd22003989a647d6b6ef5e482, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/9v/ttfw4v0x0ng...}, goog:chromeOptions: {debuggerAddress: localhost:57848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57848/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4c91987bd22003989a647d6b6ef5e482
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/9v/ttfw4v0x0ng...}, goog:chromeOptions: {debuggerAddress: localhost:59586}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59586/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 32080e64b0f9e6342c32a5bc9b4fec4c
+	at planbox.maven.AppTest.main(AppTest.java:138)
 

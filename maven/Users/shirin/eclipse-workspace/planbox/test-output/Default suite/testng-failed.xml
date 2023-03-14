@@ -6,7 +6,7 @@
       <class name="planbox.maven.AppTest">
         <methods>
           <include name="setUp"/>
-          <include name="main" invocation-numbers="0"/>
+          <include name="main" invocation-numbers="1"/>
           <include name="tearDown"/>
           <include name="getResult"/>
         </methods>
