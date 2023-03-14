@@ -1,21 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: planbox.maven.AppTest
 -------------------------------------------------------------------------------
-Tests run: 37, Failures: 2, Errors: 0, Skipped: 34, Time elapsed: 61.349 s <<< FAILURE! - in planbox.maven.AppTest
-main(planbox.maven.AppTest)  Time elapsed: 26.033 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from target frame detached
-  (Session info: chrome=110.0.5481.177)
+Tests run: 38, Failures: 2, Errors: 0, Skipped: 36, Time elapsed: 31.509 s <<< FAILURE! - in planbox.maven.AppTest
+main(planbox.maven.AppTest)  Time elapsed: 27.208 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d4428cd5a16583dce6a67677d1448dc7, get {url=http://dow.planbox.com/default/ideas}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/9v/ttfw4v0x0ng...}, goog:chromeOptions: {debuggerAddress: localhost:49968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49968/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d4428cd5a16583dce6a67677d1448dc7
-	at planbox.maven.AppTest.main(AppTest.java:236)
+Command: [4c91987bd22003989a647d6b6ef5e482, executeScript {script=return document.getElementsByClassName('main-content-inner')[0].innerText;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/9v/ttfw4v0x0ng...}, goog:chromeOptions: {debuggerAddress: localhost:57848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57848/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c91987bd22003989a647d6b6ef5e482
+	at planbox.maven.AppTest.main(AppTest.java:241)
 
-getResult(planbox.maven.AppTest)  Time elapsed: 26.056 s  <<< FAILURE!
-java.lang.RuntimeException: Unexpected result for screenshot command: null
+getResult(planbox.maven.AppTest)  Time elapsed: 27.216 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c91987bd22003989a647d6b6ef5e482, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/9v/ttfw4v0x0ng...}, goog:chromeOptions: {debuggerAddress: localhost:57848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57848/devtoo..., se:cdpVersion: 111.0.5563.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c91987bd22003989a647d6b6ef5e482
 

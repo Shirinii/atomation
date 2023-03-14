@@ -1,7 +1,6 @@
 package planbox.maven;
 
 
-
 import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
