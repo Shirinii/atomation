@@ -146,8 +146,8 @@ public class baseReport {
 		// for report
 		extent = new ExtentReports();
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-//		String reportPath = "test-output" + File.separator + "ExtentReport";
-//		spark = new ExtentSparkReporter(reportPath + dateName + ".html");
+		String reportPath = "test-output" + File.separator + "ExtentReport";
+		spark = new ExtentSparkReporter(reportPath + dateName + ".html");
 		extent.attachReporter(spark);
 		extent.setSystemInfo("Host Name", "Planbox");
 		extent.setSystemInfo("Environment", "Production");

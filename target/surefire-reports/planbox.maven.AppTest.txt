@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: planbox.maven.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.711 s - in planbox.maven.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.728 s - in planbox.maven.AppTest
