@@ -58,16 +58,15 @@ public class AppTest extends baseReport {
 
 	public static void IdeasInIdeatabInChallenge() {
 		WebElement toggleIdeaMenue = null;
-		try {
-			toggleIdeaMenue = wait.until(ExpectedConditions.visibilityOfElementLocated(
-					By.xpath("//*[contains(@class,'dropdown-toggle')]//*[@id='selectedIdeaLayout']")));
-		} catch (Exception changeInAppreanceOfToggle) {
-			toggleIdeaMenue = wait.until(ExpectedConditions.visibilityOfElementLocated(
-					By.xpath("//*[contains(@class,'dropdown-toggle')]//*[@id='selectedIdeaLayout']")));
-		}
+
+		try {	toggleIdeaMenue = wait.until(ExpectedConditions.presenceOfElementLocated(
+				By.xpath("//*[contains(@class,'dropdown-toggle')]//*[@id='selectedIdeaLayout']")));
 		jse.executeScript("var evt = document.createEvent('MouseEvents');"
 				+ "evt.initMouseEvent('click',true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0,null);"
-				+ "arguments[0].dispatchEvent(evt);", toggleIdeaMenue);
+				+ "arguments[0].dispatchEvent(evt);", toggleIdeaMenue);}
+		catch (Exception errorWhennoideaTabInchallengepage) {
+			System.out.println("there is no idea tab in challenge page");
+		}
 		WebElement toggleListView = (WebElement) (jse)
 				.executeScript("return document.querySelector('[data-view=\\\"list\\\"]');");
 		WebElement toggleGridView = (WebElement) (jse)
@@ -98,6 +97,7 @@ public class AppTest extends baseReport {
 			}
 
 		}
+
 	}
 
 	public static void ClickOnIdeasTabInChalenges() {
@@ -130,11 +130,11 @@ public class AppTest extends baseReport {
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class,'container')]")),
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='row-fluid']"))));
 		analyzeLog();
-
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='secretkey']"))).sendKeys(key);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("btn-secrectkey-login"))).click();
-
-		// jse.executeScript("window.history.go(-1)");
+		WebElement loginbutton =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("btn-secrectkey-login")));
+		jse.executeScript("arguments[0].scrollIntoView(true);", loginbutton);
+		loginbutton.click();
+		Thread.sleep(2000);
 
 		wait.until(ExpectedConditions.or(
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='is-boxes']")),
@@ -159,7 +159,9 @@ public class AppTest extends baseReport {
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@data-view='list']")));
 		wait.until(ExpectedConditions.jsReturnsValue("return document.readyState==\"complete\";"));
 		if (listToggle.getAttribute("class").contains("active")) {
-			tileToggle.click();
+			jse.executeScript("var evt = document.createEvent('MouseEvents');"
+					+ "evt.initMouseEvent('click',true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0,null);"
+					+ "arguments[0].dispatchEvent(evt);", tileToggle);
 			wait.until(ExpectedConditions.jsReturnsValue("return document.readyState==\"complete\";"));
 		}
 		analyzeLog();
