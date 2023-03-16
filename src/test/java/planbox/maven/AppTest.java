@@ -1,5 +1,6 @@
 package planbox.maven;
 
+import org.testng.annotations.Test;
 import java.util.ArrayList;
 
 import java.util.List;
@@ -7,7 +8,6 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
