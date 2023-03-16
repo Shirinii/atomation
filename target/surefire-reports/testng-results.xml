@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-15T16:11:39 EDT" name="Surefire suite" finished-at="2023-03-15T16:12:14 EDT" duration-ms="34157">
+  <suite started-at="2023-03-15T15:53:21 EDT" name="Surefire suite" finished-at="2023-03-15T15:53:58 EDT" duration-ms="36824">
     <groups>
     </groups>
-    <test started-at="2023-03-15T16:11:39 EDT" name="Surefire test" finished-at="2023-03-15T16:12:14 EDT" duration-ms="34157">
+    <test started-at="2023-03-15T15:53:21 EDT" name="Surefire test" finished-at="2023-03-15T15:53:58 EDT" duration-ms="36824">
       <class name="planbox.maven.AppTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:planbox.maven.AppTest@45f45fa1]" started-at="2023-03-15T16:11:39 EDT" name="setUp" finished-at="2023-03-15T16:11:42 EDT" duration-ms="2837" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:planbox.maven.AppTest@45f45fa1]" started-at="2023-03-15T15:53:21 EDT" name="setUp" finished-at="2023-03-15T15:53:24 EDT" duration-ms="2684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="main(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:planbox.maven.AppTest@45f45fa1]" started-at="2023-03-15T16:11:43 EDT" name="main" data-provider="URLS" finished-at="2023-03-15T16:12:13 EDT" duration-ms="30215" status="PASS">
+        <test-method signature="main(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:planbox.maven.AppTest@45f45fa1]" started-at="2023-03-15T15:53:25 EDT" name="main" data-provider="URLS" finished-at="2023-03-15T15:53:58 EDT" duration-ms="32821" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:planbox.maven.AppTest@45f45fa1]" started-at="2023-03-15T16:12:13 EDT" name="getResult" finished-at="2023-03-15T16:12:13 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:planbox.maven.AppTest@45f45fa1]" started-at="2023-03-15T15:53:58 EDT" name="getResult" finished-at="2023-03-15T15:53:58 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:planbox.maven.AppTest@45f45fa1]" started-at="2023-03-15T16:12:13 EDT" name="tearDown" finished-at="2023-03-15T16:12:14 EDT" duration-ms="500" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:planbox.maven.AppTest@45f45fa1]" started-at="2023-03-15T15:53:58 EDT" name="tearDown" finished-at="2023-03-15T15:53:58 EDT" duration-ms="648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
