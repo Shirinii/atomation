@@ -180,16 +180,17 @@ public class baseReport {
 
 	public void getResult(ITestResult result) throws Exception {
 		System.out.println("FFFF");
-		if ((result.getStatus() == ITestResult.FAILURE)) {
-			logger.log(Status.FAIL,
-					MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
-			String screenshotPath = getScreenShot(driver, result.getName());
-			logger.addScreenCaptureFromPath(screenshotPath);
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			logger.log(Status.SKIP,
-					MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE));
-
-		} 
+		System.out.println(result);
+//		if ((result.getStatus() == ITestResult.FAILURE)) {
+//			logger.log(Status.FAIL,
+//					MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
+//			String screenshotPath = getScreenShot(driver, result.getName());
+//			logger.addScreenCaptureFromPath(screenshotPath);
+//		} else if (result.getStatus() == ITestResult.SKIP) {
+//			logger.log(Status.SKIP,
+//					MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE));
+//
+//		} 
 	}
 
 }
